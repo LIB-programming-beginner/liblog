@@ -1,0 +1,114 @@
+.top{
+  padding: 30px;
+  background-color: white;
+  &__pickup{
+    height:50px;
+    line-height:50px;
+    font-size: 20px;
+    border-bottom: 1px solid lightgray;
+    &__continue{
+      padding-right: 10px;
+      font-size: 11px;
+      color: lightgray;
+      float :right;
+    }
+  }
+  &__news{
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &__blog{
+      width: 25%;
+      border: solid 10px white;
+      background-color: rgb(210, 240, 240);
+      box-sizing: border-box;
+      &__image{
+        height: 250px;
+      }
+      &__title{
+        height: 30px;
+        background-color: white;
+        font-size: 12px;
+        line-height: 30px;
+      }
+    }
+  }
+  &__ranking{
+    padding-top: 30px;
+    &__title{
+      height:50px;
+      line-height:50px;
+      font-size: 20px;
+      border-bottom: 1px solid lightgray;
+    }
+    &__title-general{
+      padding-top: 30px;
+      width: 1000px;
+      margin: 0 auto;
+      &__continue{
+        padding-right: 10px;
+        font-size: 11px;
+        color: lightgray;
+        float :right;
+      }
+    }
+    &__title-rookie{
+      padding-top: 30px;
+      width: 1000px;
+      margin: 0 auto;
+      
+    }
+    &__general{
+      height: 200px;
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      &__info{
+        width: 20%;
+        border: solid 10px white;
+        background-color: rgb(210, 240, 240);
+        box-sizing: border-box;
+        &__rank{
+          height: 50px;
+          line-height:50px;
+          text-align: center;
+        }
+        &__image{
+          height: 100px;
+        }
+        &__bloger{
+          height: 50px;
+          font-size:18px;
+          text-align: center;
+        }
+      }
+    }
+    &__rookie{
+      height: 200px;
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      &__info{
+        width: 20%;
+        border: solid 10px white;
+        background-color: rgb(210, 240, 240);
+        box-sizing: border-box;
+        &__rank{
+          height: 50px;
+          line-height:50px;
+          text-align: center;
+        }
+        &__image{
+          height: 100px;
+        }
+        &__bloger{
+          height: 50px;
+          font-size:18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

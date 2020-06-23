@@ -1,0 +1,52 @@
+.newblog{
+  &__form{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 30px 20px 30px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    box-sizing: border-box;
+    &__main{
+      width: 900px;
+      &__title{
+        height: 50px;
+        width: 900px;
+        margin-bottom: 20px;
+        background-color: white;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      &__text{
+        height: calc(100vh - 235px);
+        width: 900px;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+    &__side-bar{
+      width: 30px;
+      margin-left:10px;
+      background-color: white;
+      &__image{
+        padding: 5px;
+        box-sizing: border-box;
+        &__hidden{
+          display: none;
+        }
+      }
+    }
+  }
+  &__submit{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+    box-sizing: border-box;
+    &__btn{
+      width: 940px;
+      height: 50px;
+      margin: 0 30px 20px 30px;
+      background-color: white;
+    }
+  }
+}

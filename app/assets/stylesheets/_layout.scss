@@ -1,0 +1,75 @@
+.header{
+  height: 70px;
+  background-color: lightblue;
+  border-bottom: 5px solid lightgray;
+  display: flex;
+  &__logo{
+    width: 300px;
+    padding-left: 30px;
+    font-size: 50px;
+    color: white; 
+    text-decoration: none;
+  }
+  &__category{
+    width: 700px;
+    padding: 45px 0 0 10px;  
+  }
+  &__info{
+    width: 500px;
+    &__search{
+      padding-top: 10px;
+    }
+    &__acount{
+      display: flex;
+      padding-top: 10px;
+      &__write-blog{
+        color: black;
+        text-decoration: none;
+      }
+      &__login{
+        color: black;
+        text-decoration: none;
+      }
+      &__signup{
+        margin-left: 30px;
+        color: black;
+        text-decoration: none;
+      }
+      &__logout{
+        color: black;
+        text-decoration: none;
+      }
+      &__mypage{
+        margin-left: 30px;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.i{
+  color: black;
+  text-decoration: none;
+}
+.footer{
+  height: 70px;
+  background-color: #01014b;
+  &__contents{
+    margin: 0 auto;
+    text-align: center;
+    a{
+      margin: 0 10px 0 10px;
+      font-size: 11px;
+      color: lightgray;
+      
+      text-decoration: none;
+    }
+  }
+  &__logo{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+  }
+}

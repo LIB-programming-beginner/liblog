@@ -1,0 +1,49 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Liblog
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .header
+      .header__logo
+        = link_to "/", class: "header__logo" do
+          liblog
+      .header__category
+        %span 　　ブログ
+        %span 　　ランキング
+        %span 　　ニュース
+      .header__info    
+        .header__info__search
+          %span 検索
+        .header__info__acount
+          - if user_signed_in? && current_page?(new_post_path)
+            = link_to users_path, class: "header__info__acount__mypage" do
+              マイページ　　
+            = link_to destroy_user_session_path, method: :delete, class: "header__info__acount__logout" do
+              ログアウト
+          - elsif user_signed_in?
+            = link_to new_post_path, class: "header__info__acount__write-blog" do
+              = icon('fas', 'pen-nib', class: "header__info__acount__write-blog")
+              %span ブログを書く
+            = link_to users_path, class: "header__info__acount__mypage" do
+              マイページ　　
+            = link_to destroy_user_session_path, method: :delete, class: "header__info__acount__logout" do
+              ログアウト            
+          - else
+            = link_to new_user_session_path, class: "header__info__acount__login" do
+              ログイン                 
+            = link_to new_user_registration_path, class: "header__info__acount__signup" do
+              新規会員登録 
+    = yield
+    .footer
+      .footer__contents
+        = link_to "会社概要（運営会社）", root_path, class: "footer__contents__company"
+        = link_to "プライバシーポリシー", root_path, class: "footer__contents__privacy"
+        = link_to "お知らせ", root_path, class: "footer__contents__info"
+        = link_to "ヘルプ&ガイド", root_path, class: "footer__contents__guide"
+      .footer__logo
+        lib

@@ -1,0 +1,13 @@
+.newblog
+  = form_for @post, html: {class: "newblog"} do |f|
+    .newblog__form
+      .newblog__form__main
+        = f.text_field :title, placeholder: "タイトル" ,class: "newblog__form__main__title", style: "border: none"
+        = f.text_area :text, placeholder: "新規作成" ,class: "newblog__form__main__text", style: "border: none"
+      .newblog__form__side-bar
+        = f.fields_for :images do |i|
+          = i.label :image_url, class: 'newblog__form__side-bar__image' do
+            = icon('fas','images', class: "newblog__form__side-bar__image__icon")
+            = i.file_field :image_url, class: 'newblog__form__side-bar__image__hidden'
+    .newblog__submit
+      = f.submit "公開する", class: "newblog__submit__btn", style: "border: none" 

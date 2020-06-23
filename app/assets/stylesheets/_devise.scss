@@ -1,0 +1,28 @@
+.session{
+  height: calc(100vh - 145px);
+  width: 500px;
+  padding-top: 100px;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+.field{
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.actions{
+  font-size: 14px;
+  padding-top: 10px;
+}
+.new_registrations{
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.forget_passwords{ 
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}

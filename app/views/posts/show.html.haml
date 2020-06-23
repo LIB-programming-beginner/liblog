@@ -1,0 +1,8 @@
+.show_blog
+  .show_blog__title
+    = @post.title
+  .show_blog__text
+    = @post.text
+  .show_blog__created_at
+    %span 作成日時：
+    = @post.created_at.strftime('%Y/%m/%d %H:%M:%S')
